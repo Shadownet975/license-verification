@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Driving Checker</h1>
+      <div id="startScreen">
+        <button onclick="startApp()" class="start-button">Start</button>
+      </div>
+
+      <div class="hidden" id="formScreen">
+        <input
+          class="input-element"
+          placeholder="Enter your name"
+          type="text"
+          id="name"
+        />
+        <input
+          class="input-element2"
+          placeholder="Enter your birthyear"
+          type="number"
+          id="birthYear"
+        />
+
+        <button onclick="checkAge()" class="submit-button">Submit</button>
+      </div>
+
+      <div class="hidden" id="resultScreen">
+        <h1 id="message"></h1>
+        <button onclick="restartApp()" class="restart-button">Restart</button>
+      </div>
+    </div>
+    <p class="hidden"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
