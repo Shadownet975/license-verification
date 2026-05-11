@@ -1,55 +1,61 @@
-.con:hover {
-}
-.con {
-  color: gray;
-  background-color: aliceblue;
-}
-.div {
-  color: red;
-  background-color: aqua;
-}
-.start-button {
-  color: aqua;
-  background-color: darkslategrey;
-  padding: 20px 40px;
-  border: 2px soild blue;
-  margin: 11px;
-  font-size: 36px;
-}
-.submit-button {
-  color: black;
-  background-color: white;
-  padding: 40px 80px;
-  border-radius: 8px;
-  border: 2px solidrgb(135, 153, 135);
-  font-size: 36px;
-  margin: 12px;
-}
-.restart-button {
-  color: red;
-  background-color: #202020;
-  padding: 20px 40px;
-  border-radius: 8px;
-  font-size: 36px;
-  border: 2px solid gray;
-  margin: 12px;
-}
-.input-element {
-  border: 2px solid azure;
-  margin: 8px 0px;
-  width: 50%;
-}
-.input-element2 {
-  border: 12px;
-  border: 2px solid azure;
-  margin: 8px 0px;
-  width: 50%;
+body {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 50%;
 }
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: solid gray 1px;
+}
+/* From Uiverse.io by Voxybuns */
+button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+}
+
+.button_top {
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
+
 .hidden {
   display: none;
 }
