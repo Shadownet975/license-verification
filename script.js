@@ -14,9 +14,9 @@ function checkAge() {
   const age = currentYear - birthYear;
   let message = "";
   if (age >= 18) {
-    message = `good day ${name}, you are ${age} years old ,and you qualify to drive`;
+    message = `Good day ${name}, you are ${age} years old ,and you qualify to drive`;
   } else {
-    message = `good day ${name}, you are ${age} years old, and you are too young to drive`;
+    message = `Good day ${name}, you are ${age} years old, and you are too young to drive`;
   }
   document.getElementById("formScreen").classList.add("hidden");
   document.getElementById("resultScreen").classList.remove("hidden");
