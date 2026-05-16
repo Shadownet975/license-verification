@@ -8,20 +8,30 @@
   </head>
   <body>
     <div class="container">
-      <h1>Driving Checker</h1>
       <div id="startScreen">
-        <button onclick="startApp()" class="button_top">Start</button>
+        <h1>Driving Checker</h1>
+        <h2>Are you road-ready?</h2>
+        <p>
+          Find out if you meet the legal age requirement to get behind the
+          wheel.
+        </p>
+        <button onclick="startApp()" class="button_top">
+          Check my eligibility →
+        </button>
       </div>
 
       <div class="hidden" id="formScreen">
-        <h3>Input Your Name</h3>
+        <h1>
+          Enter your details below and we'll check your driving eligibility.
+        </h1>
+        <label for="name">Full Name</label>
         <input
           class="input-element"
           placeholder="Enter your name"
           type="text"
           id="name"
         />
-        <h3>Input Your Year of birth</h3>
+        <label for="birthYear">Year of birth</label>
         <input
           class="input-element2"
           placeholder="Enter your birthyear"
@@ -33,6 +43,7 @@
       </div>
 
       <div class="hidden" id="resultScreen">
+        <h1>Your Result</h1>
         <h1 id="message"></h1>
         <button onclick="restartApp()" class="button_top">Restart</button>
       </div>
